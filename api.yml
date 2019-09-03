@@ -1,0 +1,13 @@
+---
+
+path_prefix: "lib"
+
+api:
+
+  testFunc:
+    description: 'Should load roadmap from yml'
+    function: 'someFunc'
+    parameter_desc: '{string} [someString="./spec/api.yml"]'
+    tests:
+    - parameters: { someString: "./spec/api.yml" }
+      condition: 'should have property "api"'
